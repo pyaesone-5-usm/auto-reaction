@@ -3,7 +3,7 @@ from pyrogram.types import Message
 import random
 from nexichat import nexichat
 
-EMOJIS = ["🥰", "❤️", "😁", "💋", "😱", "🤣", "😘", "❤️‍🔥", "👌", "🫡", "😍"]
+EMOJIS = ["😍", "👍", "❤️", "💋", "🤣", "🥰", "🥺", "🥹", "😭", "🎃", "🫡", "😘", "🙃", "🙂", "🥲", "😁", "🤌", "🌚", "🍓", "🍭", "🍬", "🍼", "🗿", "🩵", "💜", "🤍", "💚", "💛", "🩷", "💙", "🖤", "💔", "🧡", "❤️‍🔥"]
 
 @nexichat.on_message(filters.incoming)
 async def react_to_messages(client: Client, message: Message):

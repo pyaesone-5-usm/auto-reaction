@@ -7,7 +7,7 @@ EMOJIS = ["🥰", "❤️", "😁", "💋", "😱", "🤣", "😘", "❤️‍�
 @nexichat.on_message(filters.incoming)
 async def react_to_messages(client: Client, message: Message):
     try:
-        random_emoji = random.choice(EMOJIS)
-        await message.react(random_emoji)
+        react = random.choice(EMOJIS)
+        await message.react(react)
     except Exception as e:
         print(f"Failed to react to message: {e}")

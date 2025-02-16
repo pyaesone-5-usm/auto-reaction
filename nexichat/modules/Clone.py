@@ -34,7 +34,6 @@ async def clone_txt(client, message):
             await ai.set_bot_commands([
                     BotCommand("start", "Start the bot"),
                     BotCommand("help", "Get the help menu"),
-                    BotCommand("clone", "Make your own chatbot"),
                     BotCommand("ping", "Check if the bot is alive or dead"),
                     BotCommand("id", "Get users user_id"),
                     BotCommand("stats", "Check bot stats"),
@@ -79,7 +78,7 @@ async def clone_txt(client, message):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @THE_VIP_BOY_OP for assistance**"
+                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @iwillgoforwardalone for assistance**"
             )
     else:
         await message.reply_text("**Provide Bot Token after /clone Command from @Botfather.**\n\n**Example:** `/clone bot token paste here`")
@@ -145,7 +144,6 @@ async def restart_bots():
                 await ai.set_bot_commands([
                     BotCommand("start", "Start the bot"),
                     BotCommand("help", "Get the help menu"),
-                    BotCommand("clone", "Make your own chatbot"),
                     BotCommand("ping", "Check if the bot is alive or dead"),
                     BotCommand("id", "Get users user_id"),
                     BotCommand("stats", "Check bot stats"),

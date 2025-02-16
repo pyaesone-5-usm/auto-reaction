@@ -87,7 +87,7 @@ for more commands check repo plugins...
 </h3>
 <p>
 <pre>
-git clone https://github.com/maythushar-music/auto-reaction && cd auto-reaction
+git clone https://github.com/pyaesone-5-usm/auto-reaction && cd auto-reaction
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit config.py with variables as given below then run bot
